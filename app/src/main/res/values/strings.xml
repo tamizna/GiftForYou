@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gift For You</string>
+    <string name="hey_i_ve_a_gift_for_you">Hey, I\'ve a gift for you!</string>
+    <string name="if_you_want_it_please_enter_your_name">If you want it, please enter your name</string>
+    <string name="your_name">Your Name</string>
+    <string name="yes_i_want_it">Yes, I want it!</string>
+    <string name="it_s_for_you">It\'s for you, %s</string>
+    <string name="hope_you_like_it">Hope you like it &#128522;</string>
+</resources>

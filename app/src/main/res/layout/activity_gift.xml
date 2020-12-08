@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_500"
+    android:padding="16dp"
+    tools:context=".GiftActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/it_s_for_you" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationGift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/txtHopeYouLike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/gift_open" />
+
+    <TextView
+        android:id="@+id/txtHopeYouLike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hope_you_like_it"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animationGift" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
